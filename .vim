@@ -1,0 +1,1 @@
+/root/psw.work/vim/.vim
