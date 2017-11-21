@@ -1,5 +1,4 @@
 syntax on
-set paste
 set number
 set ignorecase
 set smartcase
@@ -22,8 +21,6 @@ set fileencodings=gbk
 set encoding=utf-8
 setlocal et sta sw=4 sts=4
 set isf=@,48-57,/,-,_,+,,,#,$,%,~,=
-
-set incsearch
 
 "set foldenable
 "set foldmethod=syntax
@@ -133,7 +130,7 @@ map <silent> te :e ~/.vimrc<cr>
 " Plugin
     ""Bundle 'SirVer/ultisnips'
     ""Bundle 'honza/vim-snippets'
-    "Bundle 'Valloric/YouCompleteMe'
+    Bundle 'Valloric/YouCompleteMe'
     "Bundle 'taglist.vim'
     Bundle 'majutsushi/tagbar'
     "Bundle 'minibufexpl.vim'
@@ -332,7 +329,7 @@ let g:tmuxline_preset = {
  let g:ycm_autoclose_preview_window_after_completion = 1
  let g:ycm_autoclose_preview_window_after_insertion = 1
  "map <expr> <CR>  pumvisible() ? "\<C-n>\<C-y>" :"\<CR>"
- "map <expr> <C-r>  pumvisible() ? "\<CR>" :"\<C-n>\<C-y>"
+ map <expr> <C-r>  pumvisible() ? "\<CR>" :"\<C-n>\<C-y>"
 
 "inoremap <expr> <Esc>      pumvisible() ? "\<C-e>" : "\<Esc>"
 "inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"
